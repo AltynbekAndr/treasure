@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zverek.treasure">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/my_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+     <activity
+             android:name=".MainActivity"
+            android:allowBackup="true"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:screenOrientation="portrait"
+           android:theme="@style/Theme.AppCompat.NoActionBar">
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Vhod"
+            android:screenOrientation="portrait"
+            android:label="вход"
+            android:icon="@drawable/ic_person_outline_24dp"
+            android:theme="@style/AnimationActivity" />
+
+        <activity
+            android:name=".TwoMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+
+
+        <activity
+            android:name=".PredGame"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationActivity" />
+
+        <activity
+            android:name=".MySettingsActivity"
+            android:icon="@drawable/ic_settings_24dp"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationActivity" />
+
+        <activity android:name=".MyYandexMap"
+            android:label="место нахождение денег"
+            android:icon="@drawable/map_icon"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationActivity" />
+
+        <activity android:name=".UsersListActivity"
+            android:screenOrientation="portrait"     />
+
+        <activity android:name=".IamFoundMany"
+            android:icon="@drawable/send_icon"
+            android:label="отправить видео"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationActivity" />
+
+    </application>
+
+</manifest>

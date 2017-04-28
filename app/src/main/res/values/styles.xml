@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="btn_style">
+        <item name="android:background">@drawable/hbutton</item>
+
+    </style>
+    <style name="btn_back_tyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_back</item>
+    </style>
+
+    <style name="img_btn_style">
+        <item name="android:background">@drawable/img_btn</item>
+    </style>
+
+    <style name="AnimationUpDown" parent="@android:style/Animation.Activity">
+
+    <item name="android:activityOpenEnterAnimation">@anim/activity_down_up_enter</item>
+    <item name="android:activityOpenExitAnimation">@anim/activity_down_up_exit</item>
+    <item name="android:activityCloseExitAnimation">@anim/activity_down_up_close_exit</item>
+    <item name="android:activityCloseEnterAnimation">@anim/activity_down_up_close_enter</item>
+    </style>
+
+    <style name="abutton">
+        <item name="android:background">@drawable/abutton</item>
+    </style>
+
+    <style name="bbutton">
+        <item name="android:background">@drawable/bbutton</item>
+    </style>
+
+    <style name="cbutton">
+        <item name="android:background">@drawable/cbutton</item>
+    </style>
+    <style name="myStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:color">#ffffff</item>
+    </style>
+
+</resources>

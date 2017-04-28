@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zverek.treasure.PredGame"
+    android:background="@drawable/gradient"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/videoView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="на карте"
+            android:id="@+id/btn_nacarte"
+            style="@style/btn_style"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="участники"
+            android:id="@+id/btn_uchastniki"
+            style="@style/btn_style"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/my_icon"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.zverek.treasure.MainActivity"
+    android:gravity="center"
+    android:background="@drawable/gradient"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="REGISTRATION"
+            android:textSize="27dp"
+            android:textColor="#711a27"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:typeface="serif" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="вход"
+            android:id="@+id/button"
+            android:textSize="10dp"
+            android:layout_weight="0.5"
+            style="@style/btn_style"
+            android:textColor="#040404"
+            android:layout_marginRight="10dp"
+            android:typeface="serif" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ваше имя"
+                android:id="@+id/textView"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:typeface="serif"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:textColor="#ffffff"
+                android:background="#272424"
+                android:alpha="0.5"
+                android:maxLength="20"
+                android:paddingLeft="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Новый ник"
+                    android:id="@+id/textView2"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:typeface="serif"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="только латинские буквы"
+                    android:id="@+id/textView8"
+                    android:paddingLeft="15dp"
+                    android:textColor="#397ad4"
+                    android:textAlignment="gravity"
+                    android:gravity="top" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:textColor="#ffffff"
+                android:background="#272424"
+                android:alpha="0.5"
+                android:maxLength="20"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пароль"
+                android:id="@+id/textView3"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:typeface="serif"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:textColor="#ffffff"
+                android:background="#272424"
+                android:alpha="0.5"
+                android:maxLength="20"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Подтвердите пароль"
+                android:id="@+id/textView4"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:typeface="serif"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:textColor="#ffffff"
+                android:background="#272424"
+                android:alpha="0.5"
+                android:maxLength="20"
+                android:paddingLeft="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="загрузите свое фото"
+                android:id="@+id/textView5"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:typeface="serif" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:visibility="visible">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageVieww"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/myimgbtn"
+                    style="@style/img_btn_style" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/mylinear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="зарегистрироваться"
+                    android:id="@+id/button2"
+                    android:textColor="#040404"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    style="@style/btn_style"
+                    android:typeface="serif"
+                    android:layout_marginBottom="7dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
